@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply overflow-hidden bg-white font-secondary text-primary;
+  }
+  img {
+    @apply h-screen w-full bg-cover bg-center;
+  }
+  .h1 {
+    @apply mb-2 font-four text-[54px] font-bold capitalize leading-[120%] tracking-[-0.05em] lg:text-[108px];
+  }
+  .section {
+    @apply h-screen w-screen;
+  }
+  .btn {
+    @apply flex h-[66px] items-center justify-center rounded-[10px] bg-primary px-[50px] py-[18px] font-secondary text-base font-semibold uppercase text-white;
+  }
+  .logo {
+    @apply font-Third text-[40px] font-semibold uppercase text-black sm:text-[25px] md:text-[30px];
+  }
+}
+
+@media screen and (max-width: 1022px) {
+  img {
+    width: 20rem;
+    height: auto;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 640px) {
+  .logo {
+    font-size: 25px;
+  }
+}
